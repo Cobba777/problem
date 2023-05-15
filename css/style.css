@@ -1,0 +1,96 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 5rem;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(/img/header-bg.jpg) center/cover no-repeat;
+  -webkit-clip-path: polygon(0 1%, 100% 0, 99% 95%, 0 83%);
+          clip-path: polygon(0 1%, 100% 0, 99% 95%, 0 83%);
+}
+.header__logo {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+}
+.header__box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 100%;
+  text-align: center;
+}
+.header__subtitle {
+  margin: 1rem 0 5rem 0;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+}
+
+.margin-bottom-1rem {
+  margin-bottom: 1rem;
+}
+
+.title-1 {
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #FAFAFA;
+}
+
+.title-2 {
+  font-size: 3.6rem;
+  letter-spacing: 1rem;
+  font-weight: 800;
+}
+
+.title-3 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: #777777;
+}
+
+.text-regular {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #777777;
+}
+
+.text-bold {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #777777;
+}
+
+.text-inter {
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.2rem;
+  color: #FAFAFA;
+}
