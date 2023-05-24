@@ -1,6 +1,20 @@
 html {
    font-size: 62.5%;
-}
+   @include respond(tab-land) {
+      font-size: 56.25%;
+   }
+   @include respond(tab-port) {
+      font-size: 50%;
+   }
+   @include respond(phone) {
+      font-size: 30%;
+   }
+   @include respond(big-screen) {
+      font-size: 75%;
+   }
+
+
+ }
 
 body {
    padding: 5rem;
@@ -8,6 +22,12 @@ body {
    line-height: 1.1;
    font-family: 'Lato', sans-serif;
    font-weight: 400;
+   margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin: 0;
+   padding: 0;
 }
 
 *,
@@ -16,7 +36,28 @@ body {
    box-sizing: border-box;
 }
 
-.container {
+.wrapper{
    width: 100%;
    margin: 0 auto;
+}
+
+.container {
+   max-width: 120rem;
+   width: 100%;
+   margin: 0 auto;
+   &--padding {
+      padding: 20rem 0;
+      @include respond(tab-land) {
+         padding: 25rem 0;
+      }
+   }
+}
+
+.align-center {
+   text-align: center;
+}
+
+p {
+   margin: 1rem;
+   padding: 0;
 }

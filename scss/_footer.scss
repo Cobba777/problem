@@ -1,0 +1,37 @@
+.footer {
+   padding: 8rem;
+   background-color: #333333;
+
+   &__img {
+      margin-bottom: 5rem;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      @include respond(tab-port) {
+         display: block;
+         text-align: center;
+      }
+   }
+
+   &__item {
+      color: $color-white;
+      font-size: 1.6rem;
+      font-weight: 300;
+      letter-spacing: .2rem;
+      &:not(:last-child) {
+         margin-right: 5rem;
+      }
+      @include respond(tab-port) {
+         &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 3rem;
+         }
+      }
+
+   }
+}

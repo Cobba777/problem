@@ -1,3 +1,26 @@
+@mixin respond($braikpoint) {
+   @if $braikpoint == phone {
+      @media (max-width: 600px) {
+         @content;
+      }
+   }
+   @if $braikpoint == tab-port {
+      @media (max-width: 900px) {
+         @content;
+      }
+   }
+   @if $braikpoint == tab-land {
+      @media (max-width: 1240px) {
+         @content;
+      }
+   }
+   @if $braikpoint == big-screen {
+      @media (min-width: 1800px) {
+         @content;
+      }
+   }
+}
+
 $color-brown-light: #BA8554;
 $color-brown-dark: #A14F03;
 
